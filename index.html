@@ -1,0 +1,50 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="shortcut icon" href="/story-wt-vite/favicon.png" />
+    <link rel="manifest" href="/story-wt-vite/manifest.json" />
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+    <!-- Main JS -->
+    <script type="module" crossorigin src="/story-wt-vite/assets/index-DHeMOOiY.js"></script>
+    <link rel="stylesheet" crossorigin href="/story-wt-vite/assets/index-QkqFZsLl.css">
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">App</a>
+        <nav id="navigation-drawer" class="navigation-drawer"></nav>
+        <button id="drawer-button" class="drawer-button">☰</button>
+
+        <!-- Tombol Install PWA, awalnya disembunyikan -->
+        <button id="installBtn">
+          Install App
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <!-- Konten SPA akan dimuat di sini -->
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2023 App</p>
+      </div>
+    </footer>
+  </body>
+</html>
