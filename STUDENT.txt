@@ -1,2 +1,2 @@
-APP_URL=<url_aplikasi>
+APP_URL=<https://andiyusuff14.github.io/story-wt-vite/>
 MAP_SERVICE_API_KEY=<https://story-api.dicoding.dev/v1>
