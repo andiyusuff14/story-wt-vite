@@ -5,15 +5,14 @@ const NotificationHelper = {
   vapidPublicKey:
     "BCCs2eonMI-6H2ctvFaWg-UYdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk",
 
-    async requestPermission() {
-      console.log("Meminta izin notifikasi...");
-      const permission = await Notification.requestPermission();
-      console.log("Status izin:", permission);
-      if (permission !== "granted") {
-        throw new Error("Izin notifikasi tidak diberikan.");
-      }
-    },
-    
+  async requestPermission() {
+    console.log("Meminta izin notifikasi...");
+    const permission = await Notification.requestPermission();
+    console.log("Status izin:", permission);
+    if (permission !== "granted") {
+      throw new Error("Izin notifikasi tidak diberikan.");
+    }
+  },
 
   async subscribeToPush() {
     const registration = await navigator.serviceWorker.ready;
