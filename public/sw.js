@@ -2,18 +2,17 @@
 const CACHE_NAME = "story-app-cache-v2";
 const STATIC_ASSETS = [
   "/",
-  "../index.html",
-  "../public/manifest.json",
-  "../public/images/logo.png",
-  "../public/images/logo.png",
-  "../public/favicon.png",
-  "../styles/styles.css",
-  "./offline.html",
-  "../scripts/index.js",
-  "../scripts/pages/app.js",
-  "../scripts/pages/home-page.js",
-  "../scripts/pages/login-page.js",
-  "../scripts/pages/register-page.js",
+  "/index.html",
+  "/manifest.json",
+  "/images/logo.png",
+  "/favicon.png",
+  "/styles/styles.css",
+  "/offline.html",
+  "/scripts/index.js",
+  "/scripts/pages/app.js",
+  "/scripts/pages/home-page.js",
+  "/scripts/pages/login-page.js",
+  "/scripts/pages/register-page.js",
 ];
 
 // Push Notification Handler

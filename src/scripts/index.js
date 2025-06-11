@@ -1,5 +1,5 @@
 //file: src/scripts/index.js
-import "../styles/styles.css";
+import "../../styles/styles.css";
 import App from "./pages/app";
 import NotificationHelper from "./utils/notification-helper";
 import PwaPresenter from "./presenter/pwa-presenter";
