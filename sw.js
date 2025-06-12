@@ -3,9 +3,10 @@ const CACHE_NAME = "story-app-cache-v2";
 const STATIC_ASSETS = [
   "/",
   "/index.html",
-  "/manifest.json",
-  "/images/logo.png",
-  "/favicon.png",
+  "/public/manifest.json",
+  "/public/icons/icon-192x192.png",
+  "/public/icons/icon-512x512.png",
+  "/public/favicon.png",
   "/styles/styles.css",
   "/offline.html",
   "/scripts/index.js",
