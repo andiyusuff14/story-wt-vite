@@ -1,3 +1,4 @@
+// file: public/sw.js
 const CACHE_NAME = "story-app-cache-v2";
 const BASE_PATH = "/story-wt-vite";
 
@@ -19,10 +20,16 @@ const STATIC_ASSETS = [
 
 // Push Notification Handler
 self.addEventListener("push", (event) => {
-  const data = event.data?.json() || { title: "Notifikasi", options: {} };
-  const { title, options } = data;
+  const data = event.data?.json();
+  const shouldShow = data?.triggerBy === "server";
+
+  if (!shouldShow) return;
+
+  const title = data.title || "Notifikasi";
+  const options = data.options || {};
   event.waitUntil(self.registration.showNotification(title, options));
 });
+
 
 // Install: Pre-cache static assets
 self.addEventListener("install", (event) => {
