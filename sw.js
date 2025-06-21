@@ -21,9 +21,6 @@ const STATIC_ASSETS = [
 // Push Notification Handler
 self.addEventListener("push", (event) => {
   const data = event.data?.json();
-  const shouldShow = data?.triggerBy === "server";
-
-  if (!shouldShow) return;
 
   const title = data.title || "Notifikasi";
   const options = data.options || {};
